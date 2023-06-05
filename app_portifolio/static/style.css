@@ -2,12 +2,11 @@
 
 html,
 body {
-    margin: 0;
-    padding: 0;
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+    
 }
 
 #header {
@@ -37,8 +36,8 @@ body {
     padding: 0;
     font-weight: 600;
     color: #fff;
-    -moz-text-align-last: center;
-    text-align-last: center;
+    /* -moz-text-align-last: center; */
+    text-align: center;
 }
 
 #header .profile .social-links a {
@@ -107,6 +106,8 @@ section#inicio {
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
+    transition: all ease-in-out 0.5s;
+
 }
 
 section#inicio h2 {
@@ -179,3 +180,23 @@ i.menu-mobile{
     }
 
 }
+
+
+*::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    width: 12px;
+    box-shadow: inset 0 0 .3rem #00000050;
+    background-color: #fff ;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #252c90;
+  }
+  
+  section#sobre {
+    transition: all ease-in-out 0.5s;
+
+  }
